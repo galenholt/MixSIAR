@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link href='https://fonts.googleapis.com/css?family=Architects+Daughter' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print">
+
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <title>MixSIAR by brianstock</title>
+  </head>
+
+  <body>
+    <header>
+      <div class="inner">
+        <h1>MixSIAR</h1>
+        <h2>A graphical user interface (GUI) for MixSIAR, a customizable Bayesian stable isotope mixing model</h2>
+        <a href="https://github.com/brianstock/MixSIAR" class="button"><small>View project on</small>GitHub</a>
+      </div>
+    </header>
+
+    <div id="content-wrapper">
+      <div class="inner clearfix">
+        <section id="main-content">
+          <h1>
+<a name="mixsiar-gui" class="anchor" href="#mixsiar-gui"><span class="octicon octicon-link"></span></a>MixSIAR GUI</h1>
+
+<p>MixSIAR GUI is a graphical user interface (GUI) that allows you to analyze stable isotope data using the MixSIAR model framework. MixSIAR is a Bayesian mixing model that uses stable isotope data to estimate the proportions of source (prey) contributions to a mixture (consumer).</p>
+
+<p>MixSIAR represents a collaborative coding project between the investigators behind MixSIR and SIAR: Brice Semmens, Brian Stock, Eric Ward, Andrew Parnell, Donald Phillips, Andrew Jackson, Jon Moore, Stuart Bearhop, and Richard Inger.</p>
+
+<p>The MixSIAR GUI incorporates several years of advances in Bayesian mixing model theory since MixSIR and SIAR, currently:</p>
+
+<ul>
+<li>Any number of isotope/tracer values (usually 1, 2, or 3, but tested up to 20)</li>
+<li>Source fitting (both for raw source data and means+SD data)</li>
+<li>Hierarchical random/fixed effects (up to 2, either hierarchical/nested or not)</li>
+<li>Continuous covariates (up to 1, theoretically any number)</li>
+<li>Option to include Individual random effects</li>
+<li>Error structure options: residual error (SIAR) or not (MixSIR)</li>
+<li>Concentration dependence</li>
+</ul><h3>
+<a name="to-download-and-install" class="anchor" href="#to-download-and-install"><span class="octicon octicon-link"></span></a>TO DOWNLOAD AND INSTALL:</h3>
+
+<p>Just above the blue bar, there is a row with "commits", "branches", "releases", and "contributors". Click on <strong>"releases"</strong> and you should see the latest version. Below the release notes, click on the "Source code (zip)" button to download the release. The current user manual will be in the .zip folder with installation instructions and a walk-through of MixSIAR via several example datasets.</p>
+
+<h3>
+<a name="feedback-please" class="anchor" href="#feedback-please"><span class="octicon octicon-link"></span></a>FEEDBACK PLEASE!</h3>
+
+<p>This software has been improved by the questions, suggestions, and bug reports of the user community. If you have a comment, ideally use the <em>issues</em> (exclamation point in a circle) tab on the right hand side of this page. You can also post to the <a href="https://www.facebook.com/pages/SIAR-Stable-Isotope-Analysis-in-R/148501811896914">SIAR facebook group</a> or shoot me an email (<em><a href="mailto:b1stock@ucsd.edu">b1stock@ucsd.edu</a></em>).</p>
+
+<h3>
+<a name="on-citing-mixsiar" class="anchor" href="#on-citing-mixsiar"><span class="octicon octicon-link"></span></a>ON CITING MixSIAR:</h3>
+
+<p>If you use MixSIAR GUI results in publications, please cite the MixSIAR GUI manual as (similar to how you cite R):</p>
+
+<blockquote>
+<p>B. C. Stock and B. X. Semmens (2013). MixSIAR GUI User Manual, version ##. <a href="https://github.com/brianstock/MixSIAR">https://github.com/brianstock/MixSIAR</a>.</p>
+</blockquote>
+
+<p>The primary citation for <em>Bayesian mixing models</em> (MixSIR):</p>
+
+<blockquote>
+<p>Moore, J. W., &amp; Semmens, B. X. (2008). Incorporating uncertainty and prior information into stable isotope mixing models. Ecology Letters, 11(5), 470-480.</p>
+</blockquote>
+
+<p>If you are using the <em>residual error term</em> (SIAR):</p>
+
+<blockquote>
+<p>Parnell, A. C., Inger, R., Bearhop, S., &amp; Jackson, A. L. (2010). Source partitioning using stable isotopes: coping with too much variation. PLoS One, 5(3), e9672.</p>
+</blockquote>
+
+<p>If you are using a <em>hierarchical structure/random effects</em>:</p>
+
+<blockquote>
+<p>Semmens, B. X., Ward, E. J., Moore, J. W., &amp; Darimont, C. T. (2009). Quantifying inter-and intra-population niche variability using hierarchical Bayesian stable isotope mixing models. PLoS One, 4(7), e6187.</p>
+</blockquote>
+
+<p>If you are using <em>continuous effects</em>:</p>
+
+<blockquote>
+<p>Francis, T. B., Schindler, D. E., Holtgrieve, G. W., Larson, E. R., Scheuerell, M. D., Semmens, B. X., &amp; Ward, E. J. (2011). Habitat structure determines resource use by zooplankton in temperate lakes. Ecology letters, 14(4), 364-372.</p>
+</blockquote>
+
+<p>If you are using <em>source fitting</em>:</p>
+
+<blockquote>
+<p>Ward, E. J., Semmens, B. X., &amp; Schindler, D. E. (2010). Including source uncertainty and prior information in the analysis of stable isotope mixing models. Environmental science &amp; technology, 44(12), 4645-4650.</p>
+</blockquote>
+
+<p>For a detailed description of the math underlying these models, see:</p>
+
+<blockquote>
+<p>Parnell, A. C., Phillips, D. L., Bearhop, S., Semmens, B. X., Ward, E. J., Moore, J. W., Jackson, A. L., Grey, J., Kelley, D. J., &amp; Inger, R. (2013). Bayesian stable isotope mixing models. Environmetrics, 24, 387-399.</p>
+</blockquote>
+
+<p>Finally... yes, a paper introducing MixSIAR is in the works and will be forthcoming shortly.</p>
+        </section>
+
+        <aside id="sidebar">
+          <a href="https://github.com/brianstock/MixSIAR/zipball/master" class="button">
+            <small>Download</small>
+            .zip file
+          </a>
+          <a href="https://github.com/brianstock/MixSIAR/tarball/master" class="button">
+            <small>Download</small>
+            .tar.gz file
+          </a>
+
+          <p class="repo-owner"><a href="https://github.com/brianstock/MixSIAR"></a> is maintained by <a href="https://github.com/brianstock">brianstock</a>.</p>
+
+          <p>This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the Architect theme by <a href="https://twitter.com/jasonlong">Jason Long</a>.</p>
+        </aside>
+      </div>
+    </div>
+
+  
+  </body>
+</html>
